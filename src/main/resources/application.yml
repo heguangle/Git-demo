@@ -1,0 +1,15 @@
+#配置连接数据库
+spring:
+  datasource:
+    username: root
+    password: he200409
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tlias?serverTimezone=Asia/Shanghai&characterEncoding=utf8
+
+#配置mybatis-plus
+mybatis-plus:
+  configuration:
+    #日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #驼峰形式显示
+    map-underscore-to-camel-case: true
